@@ -22,7 +22,7 @@ body {
 
 /* Beweging */
 @keyframes float {
-  0%   { transform: translate(0px, 0px); }
-  50%  { transform: translate(100px, -150px); }
-  100% { transform: translate(0px, 0px); }
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  50%  { transform: translate(60px, -80px) rotate(30deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
 }
