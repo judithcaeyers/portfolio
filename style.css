@@ -16,7 +16,7 @@ body {
 }
 
 .project img {
-  width: 300px;
+  width: 500px;
   animation: float 12s ease-in-out infinite;
 }
 
