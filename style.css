@@ -17,12 +17,12 @@ body {
 
 .project img {
   width: 500px;
-  animation: float 5s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 /* Beweging */
 @keyframes float {
   0%   { transform: translate(0px, 0px) rotate(0deg); }
-  50%  { transform: translate(60px, -80px) rotate(30deg); }
+  50%  { transform: translate(600px, -800px) rotate(30deg); }
   100% { transform: translate(0px, 0px) rotate(0deg); }
 }
