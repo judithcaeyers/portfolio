@@ -36,7 +36,7 @@ body {
 /* Animatie 3: horizontaal wiebelend */
 @keyframes float3 {
   0%   { transform: translate(0, 0); }
-  50%  { transform: translate(500px, 0); }
+  50%  { transform: translate(5000px, 0); }
   100% { transform: translate(0, 0); }
 }
 
