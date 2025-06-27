@@ -21,8 +21,33 @@ body {
 }
 
 /* Beweging */
-@keyframes float {
-  0%   { transform: translate(0px, 0px) rotate(0deg); }
-  50%  { transform: translate(600px, -800px) rotate(30deg); }
-  100% { transform: translate(0px, 0px) rotate(0deg); }
+@keyframes float1 {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(20px, -30px); }
+  100% { transform: translate(0, 0); }
 }
+
+@keyframes float2 {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(-40px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes float3 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(15px, -25px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.float1 img {
+  animation: float1 8s ease-in-out infinite;
+}
+
+.float2 img {
+  animation: float2 10s ease-in-out infinite;
+}
+
+.float3 img {
+  animation: float3 12s ease-in-out infinite;
+}
+
