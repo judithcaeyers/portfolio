@@ -15,11 +15,6 @@ body {
   position: absolute;
 }
 
-.project img {
-  width: 500px;
-  animation: float 10s ease-in-out infinite;
-}
-
 /* Beweging */
 @keyframes float1 {
   0%   { transform: translate(0, 0); }
