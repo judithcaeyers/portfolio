@@ -138,3 +138,32 @@ body.pittig-roze {
 .nav-button:hover {
   background-color: #a3b2b3;
 }
+
+/* canvas verkleinen voor gsm*/
+@media screen and (max-width: 768px) {
+  #canvas {
+    width: 1600px;
+    height: 1200px;
+  }
+
+  .project.p1 {
+    top: 100px !important;
+    left: 100px !important;
+  }
+  .project.p2 {
+    top: 200px !important;
+    left: 300px !important;
+  }
+  .project.p3 {
+    top: 300px !important;
+    left: 150px !important;
+  }
+  .project.p4 {
+    top: 400px !important;
+    left: 400px !important;
+  }
+  .project.p5 {
+    top: 500px !important;
+    left: 250px !important;
+  }
+}
