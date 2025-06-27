@@ -116,3 +116,25 @@ body {
 body.pittig-roze {
   background-color: #f98cfe;
 }
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 60px auto 100px;
+  padding: 0 20px;
+}
+
+.nav-button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #a3b2b3;
+}
