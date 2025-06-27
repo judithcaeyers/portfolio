@@ -1,3 +1,4 @@
+/* ========== BASISLAYOUT ========== */
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
@@ -11,6 +12,7 @@ body {
   position: relative;
 }
 
+/* ========== PROJECTPOSITIE & VORM ========== */
 .project {
   position: absolute;
 }
@@ -18,6 +20,8 @@ body {
 .project img {
   width: 300px;
 }
+
+/* ========== ANIMATIES ========== */
 
 /* Animatie 1: diagonaal omhoog */
 @keyframes float1 {
@@ -40,14 +44,16 @@ body {
   100% { transform: translate(0, 0); }
 }
 
+/* Animatie 4: heel hoog wiebelend */
 @keyframes float4 {
   0%   { transform: translate(0, 0); }
   25%  { transform: translate(40px, -100px); }
-  50%  { transform: translate(0px, -3000px); }  /* 💥 hoger! */
+  50%  { transform: translate(0px, -3000px); }
   75%  { transform: translate(-400px, -100px); }
   100% { transform: translate(0, 0); }
 }
 
+/* Animatie 5: zigzag + rotatie */
 @keyframes float5 {
   0%   { transform: translate(0, 0) rotate(0deg); }
   25%  { transform: translate(30px, 150px) rotate(30deg); }
@@ -56,8 +62,7 @@ body {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-
-/* Koppeling per project */
+/* ========== PROJECT → ANIMATIEKOPPELING ========== */
 .project:nth-of-type(1) img {
   animation: float1 5s ease-in-out infinite;
 }
@@ -78,7 +83,7 @@ body {
   animation: float5 13s ease-in-out infinite;
 }
 
-
+/* ========== HOME-KNOP ========== */
 #home-button {
   position: fixed;
   top: 20px;
@@ -99,6 +104,7 @@ body {
   opacity: 1;
 }
 
+/* ========== PROJECTPAGINA OPMAAK ========== */
 .project-detail {
   max-width: 800px;
   margin: 150px auto;
@@ -106,6 +112,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
 .project-detail img {
   margin-top: 20px;
   width: 100%;
@@ -113,10 +120,12 @@ body {
   display: block;
 }
 
+/* ========== ACHTERGRONDKLEUREN OP PROJECTPAGINA'S ========== */
 body.pittig-roze {
   background-color: #f98cfe;
 }
 
+/* ========== VORIGE / VOLGENDE KNOP ========== */
 .project-nav {
   display: flex;
   justify-content: space-between;
@@ -139,7 +148,7 @@ body.pittig-roze {
   background-color: #a3b2b3;
 }
 
-/* canvas verkleinen voor gsm*/
+/* ========== MOBIELE LAYOUTAANPASSING ========== */
 @media screen and (max-width: 768px) {
   #canvas {
     width: 1600px;
@@ -150,18 +159,22 @@ body.pittig-roze {
     top: 100px !important;
     left: 100px !important;
   }
+
   .project.p2 {
     top: 200px !important;
     left: 300px !important;
   }
+
   .project.p3 {
     top: 300px !important;
     left: 150px !important;
   }
+
   .project.p4 {
     top: 400px !important;
     left: 400px !important;
   }
+
   .project.p5 {
     top: 500px !important;
     left: 250px !important;
