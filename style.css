@@ -120,7 +120,7 @@ body.pittig-roze {
 .project-nav {
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 50px;
   margin: 60px auto 100px;
   padding: 0 20px;
 }
