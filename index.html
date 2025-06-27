@@ -8,23 +8,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+  <!-- Home-knop -->
   <a href="index.html" id="home-button">Ik wil naar huis!</a>
-<div id="canvas">
-  <a href="projecten/project1.html" class="project p1" style="top: 100px; left: 100px;">
-    <img src="images/project1.png" alt="Project 1">
-  </a>
-  <a href="projecten/project2.html" class="project p2" style="top: 50px; left: 450px;">
-    <img src="images/project2.png" alt="Project 2">
-  </a>
-  <a href="projecten/project3.html" class="project p3" style="top: 300px; left: 1000px;">
-    <img src="images/project3.png" alt="Project 3">
-  </a>
-  <a href="projecten/project4.html" class="project p4" style="top: 1000px; left: 500px;">
-    <img src="images/project4.png" alt="Project 4">
-  </a>
-  <a href="projecten/project5.html" class="project p5" style="top: 250px; left: 700px;">
-    <img src="images/project5.png" alt="Project 5">
-  </a>
-</div>
+
+  <!-- Canvas -->
+  <div id="canvas">
+    <!-- Project 1: met klik-wissel -->
+    <a href="projecten/project1.html" class="project p1" style="top: 100px; left: 100px;">
+      <img src="images/project1.png"
+           alt="Project 1"
+           class="toggle-image"
+           data-alt="images/project1_klik.gif">
+    </a>
+
+    <!-- Project 2 -->
+    <a href="projecten/project2.html" class="project p2" style="top: 50px; left: 450px;">
+      <img src="images/project2.png" alt="Project 2">
+    </a>
+
+    <!-- Project 3 -->
+    <a href="projecten/project3.html" class="project p3" style="top: 300px; left: 1000px;">
+      <img src="images/project3.png" alt="Project 3">
+    </a>
+
+    <!-- Project 4 -->
+    <a href="projecten/project4.html" class="project p4" style="top: 1000px; left: 500px;">
+      <img src="images/project4.png" alt="Project 4">
+    </a>
+
+    <!-- Project 5 -->
+    <a href="projecten/project5.html" class="project p5" style="top: 250px; left: 700px;">
+      <img src="images/project5.png" alt="Project 5">
+    </a>
+  </div>
+
+  <!-- Wissel-script voor afbeeldingen -->
+  <script>
+    document.querySelectorAll('.toggle-image').forEach(img => {
+      img.addEventListener('click', () => {
+        const current = img.src;
+        const alt = img.getAttribute('data-alt');
+        img.src = alt;
+        img.setAttribute('data-alt', current); // wisselt heen en terug
+      });
+    });
+  </script>
+
 </body>
 </html>
