@@ -86,3 +86,7 @@ body {
   max-width: 600px;
   display: block;
 }
+
+body.pittig-roze {
+  background-color: #ffccda;
+}
