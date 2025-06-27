@@ -86,7 +86,7 @@ body {
 
 #home-button,
 .nav-button {
-  color: #f98cfe; /* pittig roze standaardkleur */
+  color: black;
   text-decoration: underline;
   background: none;
   border: none;
@@ -105,7 +105,7 @@ body {
 /* Klik-effect */
 #home-button:active,
 .nav-button:active {
-  color: darkred; /* of #b03560 of andere pittige variant */
+  color: #f98cfe; /* of #b03560 of andere pittige variant */
 }
 
 /* HOME-knop centreren bovenaan */
