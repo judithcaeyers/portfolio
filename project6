@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 6 – Judith Caeyers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <a href="../index.html" id="home-button">Ik wil naar huis!</a>
+
+  <div class="project-detail">
+    <h1>Project 6</h1>
+    <p>
+      Hier wil ik het hebben over cateren & eten & cheflilj. Dit is een voorlopig project dat nog niet online staat. Hier kan je later meer info toevoegen over het concept, het proces of het resultaat.
+    </p>
+    <img src="../images/project6.png" alt="Project 6" width="500">
+  </div>
+
+  <div class="project-nav">
+    <a href="project5.html" class="nav-button">← Vorige</a>
+    <a href="project1.html" class="nav-button">Volgende →</a>
+  </div>
+</body>
+</html>
