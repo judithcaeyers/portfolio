@@ -129,7 +129,7 @@ body.pittig-roze {
   background-color: black;
   color: white;
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 0px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.2s ease;
