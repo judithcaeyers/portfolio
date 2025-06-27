@@ -17,25 +17,25 @@ body {
 
 .project img {
   width: 500px;
-  animation: float 3s ease-in-out infinite;
+  animation: float 10s ease-in-out infinite;
 }
 
 /* Beweging */
 @keyframes float1 {
   0%   { transform: translate(0, 0); }
-  50%  { transform: translate(20px, -30px); }
+  50%  { transform: translate(200px, -300px); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes float2 {
   0%   { transform: translate(0, 0); }
-  50%  { transform: translate(-40px, 20px); }
+  50%  { transform: translate(-400px, 20px); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes float3 {
   0%   { transform: translate(0, 0) rotate(0deg); }
-  50%  { transform: translate(15px, -25px) rotate(3deg); }
+  50%  { transform: translate(15px, -250px) rotate(50deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
