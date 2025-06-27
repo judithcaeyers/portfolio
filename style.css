@@ -106,7 +106,7 @@ body {
 /* Klik-effect */
 #home-button:active,
 .nav-button:active {
-  color: darkred;
+  color: #f98cfe;
 }
 
 /* Centrale uitlijning nav-knoppen */
@@ -159,7 +159,7 @@ body.pittig-roze {
 
 /* Klik-effect */
 .nav-button:active {
-  color: darkred;
+  color: #f98cfe;
 }
 
 /* Container centreren */
