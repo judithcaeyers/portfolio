@@ -1,4 +1,4 @@
-hi<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -43,8 +43,9 @@ hi<!DOCTYPE html>
     </a>
   </div>
 
-  <!-- Script om afbeelding te wisselen bij klik -->
+  <!-- Script voor afbeelding-wissel + scroll naar midden -->
   <script>
+    // Afbeelding wisselen bij klik
     document.querySelectorAll('.toggle-image').forEach(img => {
       img.addEventListener('click', () => {
         const current = img.src;
@@ -53,15 +54,15 @@ hi<!DOCTYPE html>
         img.setAttribute('data-alt', current);
       });
     });
-  </<script>
-  window.addEventListener("load", function () {
-    // Scroll naar het midden van het canvas
-    const canvas = document.getElementById("canvas");
-    const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
-    const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
-    window.scrollTo(x, y);
-  });
-</script>
+
+    // Scroll naar het midden van het canvas bij laden
+    window.addEventListener("load", function () {
+      const canvas = document.getElementById("canvas");
+      const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
+      const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
+      window.scrollTo(x, y);
+    });
+  </script>
 
 </body>
 </html>
