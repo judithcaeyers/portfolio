@@ -18,24 +18,40 @@ body {
 }
 
 /* ========== HOVER- & STANDAARD AFBEELDING ========== */
-.hover-image {
+/* Container van project 1 */
+.p1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
   width: 300px;
   height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: background-image 0.2s ease;
 }
 
-/* Project 1 - standaard en hover afbeelding */
-.p1 .hover-image {
-  background-image: url('images/project1.png');
+/* Beeld onderaan: gewone afbeelding */
+.p1 .img-base {
+  width: 100%;
+  height: auto;
+  display: block;
   animation: float1 5s ease-in-out infinite;
 }
 
-.p1:hover .hover-image {
-  background-image: url('images/project1_hover.png');
+/* Beeld erbovenop: hoverafbeelding */
+.p1 .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
+
+/* Bij hover wordt bovenste beeld zichtbaar */
+.p1:hover .img-hover {
+  opacity: 1;
+}
+
 
 /* Projecten met standaard <img> */
 .project img {
