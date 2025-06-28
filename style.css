@@ -63,7 +63,7 @@ body {
 }
 
 /* ========== PROJECT → ANIMATIEKOPPELING ========== */
-.project:nth-of-type(1) img {
+.p1 .hover-image {
   animation: float1 5s ease-in-out infinite;
 }
 
