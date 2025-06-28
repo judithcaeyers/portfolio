@@ -43,15 +43,16 @@
 
   <!-- Script voor scroll naar midden -->
 
+<script>
+  // Scroll naar het midden van het canvas bij laden
+  window.addEventListener("load", function () {
+    const canvas = document.getElementById("canvas");
+    const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
+    const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
+    window.scrollTo(x, y);
+  });
+</script>
 
-    // Scroll naar het midden van het canvas bij laden
-    window.addEventListener("load", function () {
-      const canvas = document.getElementById("canvas");
-      const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
-      const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
-      window.scrollTo(x, y);
-    });
-  </script>
 
 </body>
 </html>
