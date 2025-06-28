@@ -14,13 +14,11 @@
 
   <!-- Canvas -->
   <div id="canvas">
-    <!-- Project 1: wisselt tussen 2 PNG's -->
-   <a href="projecten/project1.html" class="project p1">
-  <img src="images/project1.png" alt="Project 1" class="img-base">
-  <img src="images/project1_hover.png" alt="Project 1 hover" class="img-hover">
-</a>
-
-
+    <!-- Project 1: met hover-afbeelding -->
+    <a href="projecten/project1.html" class="project p1" style="top: 100px; left: 100px;">
+      <img src="images/project1.png" alt="Project 1" class="img-base">
+      <img src="images/project1_hover.png" alt="Project 1 hover" class="img-hover">
+    </a>
 
     <!-- Project 2 -->
     <a href="projecten/project2.html" class="project p2" style="top: 50px; left: 450px;">
@@ -43,18 +41,15 @@
     </a>
   </div>
 
-  <!-- Script voor scroll naar midden -->
-
-<script>
-  // Scroll naar het midden van het canvas bij laden
-  window.addEventListener("load", function () {
-    const canvas = document.getElementById("canvas");
-    const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
-    const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
-    window.scrollTo(x, y);
-  });
-</script>
-
+  <!-- Scroll naar midden bij laden -->
+  <script>
+    window.addEventListener("load", function () {
+      const canvas = document.getElementById("canvas");
+      const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
+      const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
+      window.scrollTo(x, y);
+    });
+  </script>
 
 </body>
 </html>
