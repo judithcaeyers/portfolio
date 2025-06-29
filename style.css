@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-/* PROJECTPOSITIONERING */
+/* ===== PROJECTPOSITIES ===== */
 .project {
   position: absolute;
 }
@@ -21,30 +21,31 @@ body {
 .p4 { top: 1000px; left: 500px; }
 .p5 { top: 250px; left: 700px; }
 
-/* IMAGE WRAPPER MET HOVER EFFECT */
+/* ===== IMAGE STRUCTUUR MET HOVER EFFECT ===== */
 .image-wrapper {
   position: relative;
   width: 300px;
   height: auto;
+  animation: float 10s ease-in-out infinite;
 }
 
-/* Beide afbeeldingen gestapeld */
 .img-base,
 .img-hover {
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
   transition: opacity 0.3s ease;
 }
 
-/* Hoverafbeelding verborgen tot hover */
+/* Hoverafbeelding is standaard onzichtbaar */
 .img-hover {
   opacity: 0;
   pointer-events: none;
 }
 
+/* Bij hover: hover zichtbaar, base verdwijnt */
 .project:hover .img-hover {
   opacity: 1;
 }
@@ -53,13 +54,14 @@ body {
   opacity: 0;
 }
 
-/* ANIMATIES per project */
+/* ===== ANIMATIES PER PROJECT ===== */
 .p1 .image-wrapper { animation: float1 5s ease-in-out infinite; }
 .p2 .image-wrapper { animation: float2 14s ease-in-out infinite; }
 .p3 .image-wrapper { animation: float3 8s ease-in-out infinite; }
 .p4 .image-wrapper { animation: float4 11s ease-in-out infinite; }
 .p5 .image-wrapper { animation: float5 13s ease-in-out infinite; }
 
+/* KEYFRAMES */
 @keyframes float1 {
   0% { transform: translate(0, 0); }
   50% { transform: translate(300px, -40px); }
@@ -74,15 +76,13 @@ body {
 
 @keyframes float3 {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(5000px, 0); }
+  50% { transform: translate(500px, 0); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes float4 {
   0% { transform: translate(0, 0); }
-  25% { transform: translate(40px, -100px); }
-  50% { transform: translate(0px, -3000px); }
-  75% { transform: translate(-400px, -100px); }
+  50% { transform: translate(-100px, -50px); }
   100% { transform: translate(0, 0); }
 }
 
@@ -94,7 +94,7 @@ body {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-/* HOME-KNOP */
+/* ===== HOME-KNOP ===== */
 #home-button {
   position: fixed;
   top: 30px;
@@ -109,15 +109,10 @@ body {
   cursor: pointer;
   transition: color 0.2s ease;
 }
+#home-button:hover { color: #a3b2b3; }
+#home-button:active { color: #f98cfe; }
 
-#home-button:hover {
-  color: #a3b2b3;
-}
-#home-button:active {
-  color: #f98cfe;
-}
-
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 768px) {
   #canvas {
     width: 1600px;
@@ -130,3 +125,4 @@ body {
   .p4 { top: 400px; left: 400px; }
   .p5 { top: 500px; left: 250px; }
 }
+
