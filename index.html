@@ -9,9 +9,13 @@
 </head>
 <body>
 
+  <!-- Home-knop -->
   <a href="index.html" id="home-button">Ik wil naar huis!</a>
 
+  <!-- Canvas -->
   <div id="canvas">
+
+    <!-- Projecten -->
     <a href="projecten/project1.html" class="project p1">
       <div class="image-wrapper">
         <img src="images/project1.png" alt="Project 1" class="img-base">
@@ -48,14 +52,15 @@
     </a>
   </div>
 
+  <!-- Scroll naar midden van canvas op desktop -->
   <script>
-    // Scroll naar het midden van het canvas bij laden
     window.addEventListener("load", function () {
-      const canvas = document.getElementById("canvas");
-      const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
-      const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
-      if (window.innerWidth < 768) return; // Niet scrollen op mobiel
-      window.scrollTo(x, y);
+      if (window.innerWidth >= 768) {
+        const canvas = document.getElementById("canvas");
+        const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
+        const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
+        window.scrollTo(x, y);
+      }
     });
   </script>
 
