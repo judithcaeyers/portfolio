@@ -116,30 +116,39 @@ body {
   animation: pulse 2.5s ease-in-out infinite;
 }
 
-
-/* ========== HOME-KNOP ========== */
-#home-button {
+/* ========== NAVIGATIEBALK ========== */
+/* Navigatiecontainer gecentreerd bovenaan */
+#top-nav {
   position: fixed;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
+  display: flex;
+  gap: 30px;
+}
+
+/* Gedeelde knopstijl */
+.nav-button {
   color: black;
   text-decoration: underline;
   background: none;
   border: none;
   font-size: 1rem;
+  font-family: 'Cormorant', serif;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-#home-button:hover {
+/* Hover/kleur-effecten */
+.nav-button:hover {
   color: #a3b2b3;
 }
 
-#home-button:active {
+.nav-button:active {
   color: #f98cfe;
 }
+
 
 /* ========== RESPONSIVE ========== */
 @media screen and (max-width: 768px) {
