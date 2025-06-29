@@ -238,3 +238,14 @@ body.pittig-roze {
   display: flex;
   gap: 30px;
 }
+
+/* ========== NAVIGATIEBALK AANPASSEN OP GSM ========== */
+@media screen and (max-width: 768px) {
+  #top-nav {
+    justify-content: space-around; /* verdeelt knoppen mooi */
+    padding: 0 10px; /* eventueel kleine marge aan de zijkanten */
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
