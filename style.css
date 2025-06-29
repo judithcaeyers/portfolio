@@ -57,7 +57,7 @@ body {
 /* ========== ANIMATIE: zweven ========== */
 @keyframes float {
   0%   { transform: translate(0px, 0px); }
-  50%  { transform: translate(20px, -15px); }
+  50%  { transform: translate(2000px, -15px); }
   100% { transform: translate(0px, 0px); }
 }
 
