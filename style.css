@@ -65,11 +65,21 @@ body {
 }
 
 @keyframes twist {
-  0%   { transform: rotateZ(0deg); }
-  25%  { transform: rotateZ(40deg); }
-  50%  { transform: rotateZ(-20deg); }
-  75%  { transform: rotateZ(10deg); }
-  100% { transform: rotateZ(0deg); }
+  0% {
+    transform: translate(0, 0) rotateZ(0deg);
+  }
+  25% {
+    transform: translate(100px, -150px) rotateZ(30deg);
+  }
+  50% {
+    transform: translate(-150px, 100px) rotateZ(-30deg);
+  }
+  75% {
+    transform: translate(120px, 80px) rotateZ(20deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateZ(0deg);
+  }
 }
 
 
