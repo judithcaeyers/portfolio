@@ -18,45 +18,50 @@ body {
 }
 
 /* ========== HOVER- & STANDAARD AFBEELDING ========== */
+/* ========== PROJECT 1 HOVER + ANIMATIE ========== */
+
 /* Container van project 1 */
 .p1 {
   position: absolute;
   top: 100px;
   left: 100px;
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 
-/* Beeld onderaan: gewone afbeelding */
-.p1 .img-base {
+/* Wrapper die beide afbeeldingen bevat en beweegt */
+.p1 .image-wrapper {
+  position: relative;
   width: 100%;
   height: auto;
-  display: block;
   animation: float1 5s ease-in-out infinite;
 }
 
-/* Beeld erbovenop: hoverafbeelding */
+/* Beide afbeeldingen gestapeld */
+.p1 .img-base,
 .p1 .img-hover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* Hover-afbeelding standaard onzichtbaar */
+.p1 .img-hover {
+  opacity: 0;
   pointer-events: none;
 }
 
-/* Bij hover wordt bovenste beeld zichtbaar */
+/* Bij hover: hover-afbeelding zichtbaar, basisbeeld verdwijnt */
 .p1:hover .img-hover {
   opacity: 1;
 }
-
-
-/* Projecten met standaard <img> */
-.project img {
-  width: 300px;
+.p1:hover .img-base {
+  opacity: 0;
 }
+
 
 /* ========== ANIMATIES ========== */
 
@@ -164,7 +169,7 @@ body {
 .project-detail img {
   margin-top: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   display: block;
 }
 
