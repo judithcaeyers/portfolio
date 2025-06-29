@@ -65,16 +65,13 @@ body {
 }
 
 @keyframes twist {
-  0%, 100% {
-    transform: translate(0, 0) rotateZ(0deg);
-  }
-  25% {
-    transform: translate(80px, -40px) rotateZ(50deg);
-  }
-  75% {
-    transform: translate(-80px, 40px) rotateZ(-50deg);
-  }
+  0%   { transform: rotateZ(0deg); }
+  25%  { transform: rotateZ(40deg); }
+  50%  { transform: rotateZ(-20deg); }
+  75%  { transform: rotateZ(10deg); }
+  100% { transform: rotateZ(0deg); }
 }
+
 
 
 @keyframes jump {
