@@ -188,6 +188,19 @@ body {
   max-width: 800px;
   display: block;
 }
+.twee-kolommen {
+  column-count: 2;
+  column-gap: 40px;
+  text-align: justify;
+}
+
+/* Optioneel: voor mobiel terug naar 1 kolom */
+@media screen and (max-width: 768px) {
+  .twee-kolommen {
+    column-count: 1;
+  }
+}
+
 
 /* ========== ACHTERGRONDKLEUREN OP PROJECTPAGINA'S ========== */
 body.pittig-roze {
