@@ -56,20 +56,20 @@ body {
 /* ========== ANIMATIES ========== */
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-100px); }
+  50% { transform: translateY(-500px); }
 }
 
 @keyframes flip {
   0%   { transform: translate(0, 0) rotate(0deg); }
-  10%  { transform: translate(50px, -20px) rotate(5deg); }
-  20%  { transform: translate(100px, 20px) rotate(-5deg); }
-  30%  { transform: translate(150px, -10px) rotate(4deg); }
-  40%  { transform: translate(200px, 30px) rotate(-4deg); }
+  10%  { transform: translate(50px, -20px) rotate(50deg); }
+  20%  { transform: translate(1000px, 20px) rotate(-50deg); }
+  30%  { transform: translate(150px, -10px) rotate(40deg); }
+  40%  { transform: translate(200px, 30px) rotate(-40deg); }
   50%  { transform: translate(250px, 0) rotate(0deg); }
-  60%  { transform: translate(200px, -30px) rotate(3deg); }
-  70%  { transform: translate(150px, 20px) rotate(-3deg); }
-  80%  { transform: translate(100px, -10px) rotate(2deg); }
-  90%  { transform: translate(50px, 10px) rotate(-2deg); }
+  60%  { transform: translate(200px, -30px) rotate(30deg); }
+  70%  { transform: translate(150px, 20px) rotate(-30deg); }
+  80%  { transform: translate(1000px, -10px) rotate(2deg); }
+  90%  { transform: translate(50px, 10px) rotate(-20deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
@@ -95,13 +95,13 @@ body {
 
 @keyframes jump {
   0%, 100% { transform: translate(0, 0); }
-  40% { transform: translate(100px, -200px); }
-  60% { transform: translate(-100px, -150px); }
+  40% { transform: translate(100px, -500px); }
+  60% { transform: translate(-500px, -150px); }
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.50); }
+  50% { transform: scale(2); }
 }
 
 .bob {
