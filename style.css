@@ -105,24 +105,24 @@ body {
 }
 
 .bob {
-  animation: bob 4s ease-in-out infinite;
+  animation: bob 10s ease-in-out infinite;
 }
 
 .flip {
-  animation: flip 5s ease-in-out infinite;
+  animation: flip 12s ease-in-out infinite;
   transform-style: preserve-3d;
 }
 
 .twist {
-  animation: twist 3s ease-in-out infinite;
+  animation: twist 8s ease-in-out infinite;
 }
 
 .jump {
-  animation: jump 3s ease-in-out infinite;
+  animation: jump 11s ease-in-out infinite;
 }
 
 .pulse {
-  animation: pulse 2.5s ease-in-out infinite;
+  animation: pulse 4s ease-in-out infinite;
 }
 
 /* ========== NAVIGATIEBALK ========== */
