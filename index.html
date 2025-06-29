@@ -3,52 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Judith Caeyers – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <!-- Home-knop -->
   <a href="index.html" id="home-button">Ik wil naar huis!</a>
 
-  <!-- Canvas -->
   <div id="canvas">
     <a href="projecten/project1.html" class="project p1">
-  <div class="image-wrapper">
-    <img src="images/project1.png" alt="Project 1" class="img-base">
-    <img src="images/project1_hover.png" alt="Project 1 hover" class="img-hover">
+      <div class="image-wrapper">
+        <img src="images/project1.png" alt="Project 1" class="img-base">
+        <img src="images/project1_hover.png" alt="Project 1 hover" class="img-hover">
+      </div>
+    </a>
+
+    <a href="projecten/project2.html" class="project p2">
+      <div class="image-wrapper">
+        <img src="images/project2.png" alt="Project 2" class="img-base">
+        <img src="images/project2_hover.png" alt="Project 2 hover" class="img-hover">
+      </div>
+    </a>
+
+    <a href="projecten/project3.html" class="project p3">
+      <div class="image-wrapper">
+        <img src="images/project3.png" alt="Project 3" class="img-base">
+        <img src="images/project3_hover.png" alt="Project 3 hover" class="img-hover">
+      </div>
+    </a>
+
+    <a href="projecten/project4.html" class="project p4">
+      <div class="image-wrapper">
+        <img src="images/project4.png" alt="Project 4" class="img-base">
+        <img src="images/project4_hover.png" alt="Project 4 hover" class="img-hover">
+      </div>
+    </a>
+
+    <a href="projecten/project5.html" class="project p5">
+      <div class="image-wrapper">
+        <img src="images/project5.png" alt="Project 5" class="img-base">
+        <img src="images/project5_hover.png" alt="Project 5 hover" class="img-hover">
+      </div>
+    </a>
   </div>
-</a>
 
-
-    <!-- Project 2 -->
-    <a href="projecten/project2.html" class="project p2" style="top: 50px; left: 450px;">
-      <img src="images/project2.png" alt="Project 2">
-    </a>
-
-    <!-- Project 3 -->
-    <a href="projecten/project3.html" class="project p3" style="top: 300px; left: 1000px;">
-      <img src="images/project3.png" alt="Project 3">
-    </a>
-
-    <!-- Project 4 -->
-    <a href="projecten/project4.html" class="project p4" style="top: 1000px; left: 500px;">
-      <img src="images/project4.png" alt="Project 4">
-    </a>
-
-    <!-- Project 5 -->
-    <a href="projecten/project5.html" class="project p5" style="top: 250px; left: 700px;">
-      <img src="images/project5.png" alt="Project 5">
-    </a>
-  </div>
-
-  <!-- Scroll naar midden bij laden -->
   <script>
+    // Scroll naar het midden van het canvas bij laden
     window.addEventListener("load", function () {
       const canvas = document.getElementById("canvas");
       const x = canvas.offsetWidth / 2 - window.innerWidth / 2;
       const y = canvas.offsetHeight / 2 - window.innerHeight / 2;
+      if (window.innerWidth < 768) return; // Niet scrollen op mobiel
       window.scrollTo(x, y);
     });
   </script>
