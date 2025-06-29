@@ -56,12 +56,12 @@ body {
 /* ========== ANIMATIES ========== */
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-200px); } /* groter dan -100px */
+  50% { transform: translateY(-100px); }
 }
 
 @keyframes flip {
   0%, 100% { transform: rotateY(0deg); }
-  50% { transform: rotateY(180deg); } /* volledige flip i.p.v. 70° */
+  50% { transform: rotateY(70deg); }
 }
 
 @keyframes twist {
@@ -69,30 +69,85 @@ body {
     transform: translate(0, 0) rotateZ(0deg);
   }
   25% {
-    transform: translate(250px, -300px) rotateZ(60deg);
+    transform: translate(100px, -150px) rotateZ(30deg);
   }
   50% {
-    transform: translate(-300px, 200px) rotateZ(-60deg);
+    transform: translate(-150px, 100px) rotateZ(-30deg);
   }
   75% {
-    transform: translate(200px, 150px) rotateZ(40deg);
+    transform: translate(120px, 80px) rotateZ(20deg);
   }
   100% {
     transform: translate(0, 0) rotateZ(0deg);
   }
 }
 
+
+
 @keyframes jump {
   0%, 100% { transform: translate(0, 0); }
-  40% { transform: translate(200px, -400px); }
-  60% { transform: translate(-200px, -300px); }
+  40% { transform: translate(100px, -200px); }
+  60% { transform: translate(-100px, -150px); }
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(2); } /* van 1.5 → 2 voor sterkere zoom */
+  50% { transform: scale(1.50); }
 }
 
+.bob {
+  animation: bob 4s ease-in-out infinite;
+}
+
+.flip {
+  animation: flip 5s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.twist {
+  animation: twist 3s ease-in-out infinite;
+}
+
+.jump {
+  animation: jump 3s ease-in-out infinite;
+}
+
+.pulse {
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+/* ========== NAVIGATIEBALK ========== */
+/* Navigatiecontainer gecentreerd bovenaan */
+#top-nav {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  gap: 30px;
+}
+
+/* Gedeelde knopstijl */
+.nav-button {
+  color: black;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Cormorant', serif;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Hover/kleur-effecten */
+.nav-button:hover {
+  color: #a3b2b3;
+}
+
+.nav-button:active {
+  color: #f98cfe;
+}
 
 
 /* ========== RESPONSIVE ========== */
@@ -130,6 +185,7 @@ body.pittig-roze {
   background-color: #f98cfe;
 }
 
+/* ========== VORIGE / VOLGENDE KNOP ========== */
 /* ========== OPMAAK KNOPPEN ========== */
 .nav-button {
   color: black;
@@ -153,6 +209,7 @@ body.pittig-roze {
   color: #f98cfe;
 }
 
+/* Container centreren */
 /* ========== VORIGE / VOLGENDE KNOP ========== */
 .project-nav {
   display: flex;
@@ -172,4 +229,3 @@ body.pittig-roze {
   display: flex;
   gap: 30px;
 }
-
