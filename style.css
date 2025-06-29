@@ -116,39 +116,6 @@ body {
   animation: pulse 2.5s ease-in-out infinite;
 }
 
-/* ========== NAVIGATIEBALK ========== */
-/* Navigatiecontainer gecentreerd bovenaan */
-#top-nav {
-  position: fixed;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  display: flex;
-  gap: 30px;
-}
-
-/* Gedeelde knopstijl */
-.nav-button {
-  color: black;
-  text-decoration: underline;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  font-family: 'Cormorant', serif;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-/* Hover/kleur-effecten */
-.nav-button:hover {
-  color: #a3b2b3;
-}
-
-.nav-button:active {
-  color: #f98cfe;
-}
-
 
 /* ========== RESPONSIVE ========== */
 @media screen and (max-width: 768px) {
@@ -185,7 +152,7 @@ body.pittig-roze {
   background-color: #f98cfe;
 }
 
-/* ========== VORIGE / VOLGENDE KNOP ========== */
+/* ========== OPMAAK KNOPPEN ========== */
 .nav-button {
   color: black;
   text-decoration: underline;
@@ -193,6 +160,7 @@ body.pittig-roze {
   border: none;
   font-weight: normal;
   font-size: 1rem;
+  font-family: 'Cormorant', serif;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -207,7 +175,7 @@ body.pittig-roze {
   color: #f98cfe;
 }
 
-/* Container centreren */
+/* ========== VORIGE / VOLGENDE KNOP ========== */
 .project-nav {
   display: flex;
   justify-content: center;
@@ -215,3 +183,15 @@ body.pittig-roze {
   margin: 60px auto 100px;
   padding: 0 20px;
 }
+
+/* ========== NAVIGATIEBALK ========== */
+#top-nav {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  gap: 30px;
+}
+
