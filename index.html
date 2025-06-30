@@ -60,6 +60,16 @@
 <div id="motion-toggle-wrapper">
   <a href="#" class="nav-button" id="toggle-motion">Zit eens stil</a>
 </div>
+<script>
+  const toggleBtn = document.getElementById("toggle-motion");
+  toggleBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.body.classList.toggle("stil");
+    toggleBtn.textContent = document.body.classList.contains("stil")
+      ? "Laat maar wiebelen"
+      : "Zit eens stil";
+  });
+</script>
 
 
 </body>
