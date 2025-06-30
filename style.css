@@ -265,3 +265,17 @@ body.pittig-roze {
   }
 }
 
+/* Animaties uitschakelen als 'stil' actief is */
+body.stil .image-wrapper {
+  animation: none !important;
+}
+
+#motion-toggle-wrapper {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+
