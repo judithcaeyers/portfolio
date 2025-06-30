@@ -255,10 +255,13 @@ body.pittig-roze {
 /* ========== NAVIGATIEBALK AANPASSEN OP GSM ========== */
 @media screen and (max-width: 768px) {
   #top-nav {
-    justify-content: space-around; /* verdeelt knoppen mooi */
-    padding: 0 10px; /* eventueel kleine marge aan de zijkanten */
-    width: 100%;
     left: 0;
+    right: 0;
     transform: none;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px;
   }
 }
+
