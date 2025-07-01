@@ -137,7 +137,7 @@ body {
   gap: 30px;
 }
 
-/* Gedeelde knopstijl */
+/* Gedeelde knopstijl + ook vorige volgende knop */
 .nav-button {
   color: black;
   text-decoration: underline;
@@ -207,29 +207,6 @@ body.pittig-roze {
   background-color: #f98cfe;
 }
 
-/* ========== VORIGE / VOLGENDE KNOP ========== */
-/* ========== OPMAAK KNOPPEN ========== */
-.nav-button {
-  color: black;
-  text-decoration: underline;
-  background: none;
-  border: none;
-  font-weight: normal;
-  font-size: 1rem;
-  font-family: 'Cormorant', serif;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-/* Hover-effect */
-.nav-button:hover {
-  color: #a3b2b3;
-}
-
-/* Klik-effect */
-.nav-button:active {
-  color: #f98cfe;
-}
 
 /* Container centreren */
 /* ========== VORIGE / VOLGENDE KNOP ========== */
