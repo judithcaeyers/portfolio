@@ -174,12 +174,8 @@ body {
 }
 
 /* ========== PROJECTPAGINA OPMAAK ========== */
-.project-detail {
-  max-width: 800px;
-  margin: 150px auto;
-  padding: 0 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.project-detail h1 {
+  margin-bottom: 10px; /* kleiner maken voor minder witruimte */
 }
 
 .project-detail img {
@@ -192,6 +188,7 @@ body {
   column-count: 2;
   column-gap: 40px;
   text-align: justify;
+  margin-top: 0;  /* extra zekerheid */
 }
 
 /* Optioneel: voor mobiel terug naar 1 kolom */
@@ -203,10 +200,14 @@ body {
 
 .project-tekst {
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 0 auto 40px;  /* géén extra marge bovenaan */
   padding: 0 20px;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.project-tekst p:first-child {
+  margin-top: 0; /* voorkom dat eerste p een bovenmarge creëert */
 }
 
 .image-gallery {
