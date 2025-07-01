@@ -201,6 +201,26 @@ body {
   }
 }
 
+.project-tekst {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.image-gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
 
 /* ========== ACHTERGRONDKLEUREN OP PROJECTPAGINA'S ========== */
 body.pittig-roze {
