@@ -342,6 +342,12 @@ body.stil .image-wrapper {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #canvas {
+    transform: translateX(100vw); /* één volledige schermbreedte opschuiven */
+  }
+}
+
 /* ========== PROJECTPAGINAS AANPASSEN OP GSM ========== */
 
 /* Optioneel: voor mobiel terug naar 1 kolom */
