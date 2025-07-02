@@ -12,12 +12,16 @@ body {
   position: relative;
 }
 
-.site-footer {
+.site-footer::before {
+  content: "© 2025 Judith Caeyers   -   judithcaeyers@gmail.com   -   BE 0734 742 237";
+  display: block;
   text-align: center;
+  font-family: 'Cormorant', serif;
   font-size: 0.9rem;
-  margin: 60px 0 20px;
-  color: #666;
+  padding: 40px 20px;
+  color: black;
 }
+
 
 
 /* ========== PROJECT-POSITIE ========== */
