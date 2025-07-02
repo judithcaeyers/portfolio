@@ -323,12 +323,13 @@ body.stil .image-wrapper {
 }
 
 #motion-toggle-wrapper {
-  position: absolute;
-  bottom: 50px;
+  position: fixed; /* vastzetten op het scherm */
+  bottom: 20px; /* afstand vanaf de onderkant */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1000; /* zorg dat hij altijd zichtbaar is */
 }
+
 
 @media screen and (max-width: 768px) {
   #top-nav {
