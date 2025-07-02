@@ -184,26 +184,13 @@ body {
   max-width: 800px;
   display: block;
 }
-.twee-kolommen {
-  column-count: 2;
-  column-gap: 40px;
-  text-align: justify;
-  margin-top: 0;  /* extra zekerheid */
-}
+
 
 /* Optioneel: voor mobiel terug naar 1 kolom */
 @media screen and (max-width: 768px) {
   .twee-kolommen {
     column-count: 1;
   }
-}
-
-.project-tekst {
-  max-width: 1000px;
-  margin: 0 auto 40px;  /* géén extra marge bovenaan */
-  padding: 0 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 .project-tekst p:first-child {
@@ -221,6 +208,26 @@ body {
   margin-bottom: 20px;
   display: block;
 }
+
+.project-tekst {
+  max-width: 1000px;
+  margin: 150px auto 40px;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.twee-kolommen {
+  column-count: 2;
+  column-gap: 40px;
+  text-align: justify;
+}
+
+.project-tekst h1 {
+  column-span: all;
+  margin-bottom: 30px;
+}
+
 
 
 /* ========== ACHTERGRONDKLEUREN OP PROJECTPAGINA'S ========== */
