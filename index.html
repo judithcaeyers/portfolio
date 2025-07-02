@@ -95,10 +95,13 @@
 <script>
 window.addEventListener('load', () => {
   if(window.innerWidth <= 768) {
-    window.scrollTo(window.innerWidth, 0); // precies één schermbreedte naar rechts
+    setTimeout(() => {
+      window.scrollTo(window.innerWidth, 0);
+    }, 100); // vertraging van 100ms
   }
 });
 </script>
+
 
 </body>
 </html>
