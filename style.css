@@ -185,14 +185,6 @@ body {
   display: block;
 }
 
-
-/* Optioneel: voor mobiel terug naar 1 kolom */
-@media screen and (max-width: 768px) {
-  .twee-kolommen {
-    column-count: 1;
-  }
-}
-
 .project-tekst p:first-child {
   margin-top: 0; /* voorkom dat eerste p een bovenmarge creëert */
 }
@@ -265,17 +257,7 @@ body.pittig-roze {
 }
 
 /* ========== NAVIGATIEBALK AANPASSEN OP GSM ========== */
-@media screen and (max-width: 768px) {
-  #top-nav {
-    left: 0;
-    right: 0;
-    transform: none;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding: 0 10px;
-  }
-}
+
 
 /* Animaties uitschakelen als 'stil' actief is */
 body.stil .image-wrapper {
@@ -290,4 +272,23 @@ body.stil .image-wrapper {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  #top-nav {
+    left: 0;
+    right: 0;
+    transform: none;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 
+/* ========== PROJECTPAGINAS AANPASSEN OP GSM ========== */
+
+/* Optioneel: voor mobiel terug naar 1 kolom */
+@media screen and (max-width: 768px) {
+  .twee-kolommen {
+    column-count: 1;
+  }
+}
