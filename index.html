@@ -15,61 +15,76 @@
     <a href="hallo.html" class="nav-button">Hallo</a>
   </div>
 
-
-
   <!-- Canvas -->
   <div id="canvas">
 
-    <!-- Projecten -->
+    <!-- Projecten met willekeurige animatie -->
     <a href="projecten/project1.html" class="project p1">
-      <div class="image-wrapper bob">
+      <div class="image-wrapper animatable">
         <img src="images/project1.png" alt="Project 1" class="img-base">
         <img src="images/project1_hover.png" alt="Project 1 hover" class="img-hover">
       </div>
     </a>
 
     <a href="projecten/project2.html" class="project p2">
-      <div class="image-wrapper flip">
+      <div class="image-wrapper animatable">
         <img src="images/project2.png" alt="Project 2" class="img-base">
         <img src="images/project2_hover.png" alt="Project 2 hover" class="img-hover">
       </div>
     </a>
 
     <a href="projecten/project3.html" class="project p3">
-      <div class="image-wrapper twist">
+      <div class="image-wrapper animatable">
         <img src="images/project3.png" alt="Project 3" class="img-base">
         <img src="images/project3_hover.png" alt="Project 3 hover" class="img-hover">
       </div>
     </a>
 
     <a href="projecten/project4.html" class="project p4">
-      <div class="image-wrapper jump">
+      <div class="image-wrapper animatable">
         <img src="images/project4.png" alt="Project 4" class="img-base">
         <img src="images/project4_hover.png" alt="Project 4 hover" class="img-hover">
       </div>
     </a>
 
     <a href="projecten/project5.html" class="project p5">
-      <div class="image-wrapper pulse">
+      <div class="image-wrapper animatable">
         <img src="images/project5.png" alt="Project 5" class="img-base">
         <img src="images/project5_hover.png" alt="Project 5 hover" class="img-hover">
       </div>
     </a>
-  </div>
-<div id="motion-toggle-wrapper">
-  <a href="#" class="nav-button" id="toggle-motion">Zit eens stil</a>
-</div>
-<script>
-  const toggleBtn = document.getElementById("toggle-motion");
-  toggleBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.body.classList.toggle("stil");
-    toggleBtn.textContent = document.body.classList.contains("stil")
-      ? "Laat maar wiebelen"
-      : "Zit eens stil";
-  });
-</script>
 
+  </div>
+
+  <!-- Beweging aan/uit knop -->
+  <div id="motion-toggle-wrapper">
+    <a href="#" class="nav-button" id="toggle-motion">Zit eens stil</a>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle bewegingsklasse
+    const toggleBtn = document.getElementById("toggle-motion");
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.body.classList.toggle("stil");
+      toggleBtn.textContent = document.body.classList.contains("stil")
+        ? "Laat maar wiebelen"
+        : "Zit eens stil";
+    });
+
+    // Willekeurige animatie per project
+    const animations = ["bob", "flip", "twist", "jump", "pulse"];
+    const elements = document.querySelectorAll(".animatable");
+
+    elements.forEach(el => {
+      // alle bestaande animaties verwijderen
+      animations.forEach(anim => el.classList.remove(anim));
+      // random animatie toevoegen
+      const randomAnim = animations[Math.floor(Math.random() * animations.length)];
+      el.classList.add(randomAnim);
+    });
+  </script>
 
 </body>
 </html>
