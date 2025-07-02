@@ -104,6 +104,61 @@ body {
   50% { transform: scale(2); }
 }
 
+@keyframes zigzag {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(40px, -20px); }
+  40%  { transform: translate(-30px, 30px); }
+  60%  { transform: translate(50px, 10px); }
+  80%  { transform: translate(-20px, -40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes wander {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-80px, 50px); }
+  50%  { transform: translate(100px, -20px); }
+  75%  { transform: translate(-50px, 80px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes dart {
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(100px, 0); }
+  20%  { transform: translate(-100px, 0); }
+  30%  { transform: translate(80px, 0); }
+  40%  { transform: translate(-80px, 0); }
+  50%  { transform: translate(50px, 0); }
+  60%  { transform: translate(-50px, 0); }
+  70%  { transform: translate(25px, 0); }
+  80%  { transform: translate(-25px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes swoop {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(100px, -200px); }
+  50%  { transform: translate(-150px, 150px); }
+  75%  { transform: translate(200px, -100px); }
+  100% { transform: translate(0, 0); }
+}
+
+.zigzag {
+  animation: zigzag 8s ease-in-out infinite;
+}
+
+.wander {
+  animation: wander 10s ease-in-out infinite;
+}
+
+.dart {
+  animation: dart 5s ease-in-out infinite;
+}
+
+.swoop {
+  animation: swoop 12s ease-in-out infinite;
+}
+
+
 .bob {
   animation: bob 10s ease-in-out infinite;
 }
