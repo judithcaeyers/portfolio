@@ -12,6 +12,14 @@ body {
   position: relative;
 }
 
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 60px 0 20px;
+  color: #666;
+}
+
+
 /* ========== PROJECT-POSITIE ========== */
 .project {
   position: absolute;
