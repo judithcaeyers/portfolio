@@ -92,6 +92,13 @@
       el.classList.add(shuffledAnimations[i]);
     });
   </script>
+<script>
+window.addEventListener('load', () => {
+  if(window.innerWidth <= 768) {
+    window.scrollTo(window.innerWidth, 0); // precies één schermbreedte naar rechts
+  }
+});
+</script>
 
 </body>
 </html>
