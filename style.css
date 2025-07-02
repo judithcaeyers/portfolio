@@ -225,8 +225,10 @@ body {
 
 .project-tekst h1 {
   column-span: all;
+  display: block; /* <- dit helpt met compatibiliteit */
   margin-bottom: 30px;
 }
+
 
 
 
