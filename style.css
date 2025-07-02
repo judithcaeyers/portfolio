@@ -324,7 +324,7 @@ body.stil .image-wrapper {
 
 #motion-toggle-wrapper {
   position: fixed; /* vastzetten op het scherm */
-  bottom: 20px; /* afstand vanaf de onderkant */
+  bottom: 50px; /* afstand vanaf de onderkant */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000; /* zorg dat hij altijd zichtbaar is */
