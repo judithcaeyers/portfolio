@@ -18,7 +18,7 @@
   <!-- Canvas -->
   <div id="canvas">
 
-    <!-- Projecten met willekeurige animatie -->
+    <!-- Projecten met unieke animatie -->
     <a href="projecten/project1.html" class="project p1">
       <div class="image-wrapper animatable">
         <img src="images/project1.png" alt="Project 1" class="img-base">
@@ -63,7 +63,7 @@
 
   <!-- Scripts -->
   <script>
-    // Toggle bewegingsklasse
+    // Toggle stil-modus
     const toggleBtn = document.getElementById("toggle-motion");
     toggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
@@ -73,20 +73,23 @@
         : "Zit eens stil";
     });
 
-    // Willekeurige animatie per project
+    // Animatieklassen
     const animations = [
-  "bob", "flip", "twist", "jump", "pulse", 
-  "zigzag", "wander", "dart", "swoop"
-];
+      "bob", "flip", "twist", "jump", "pulse",
+      "zigzag", "wander", "dart", "swoop"
+    ];
 
-    const elements = document.querySelectorAll(".animatable");
+    // Selecteer alle projecten
+    const elements = Array.from(document.querySelectorAll(".animatable"));
 
-    elements.forEach(el => {
-      // alle bestaande animaties verwijderen
+    // Shuffle animaties en wijs toe zodat ze uniek zijn
+    const shuffledAnimations = animations
+      .sort(() => 0.5 - Math.random())
+      .slice(0, elements.length);
+
+    elements.forEach((el, i) => {
       animations.forEach(anim => el.classList.remove(anim));
-      // random animatie toevoegen
-      const randomAnim = animations[Math.floor(Math.random() * animations.length)];
-      el.classList.add(randomAnim);
+      el.classList.add(shuffledAnimations[i]);
     });
   </script>
 
