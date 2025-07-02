@@ -344,7 +344,7 @@ body.stil .image-wrapper {
 
 @media screen and (max-width: 768px) {
   #canvas {
-    transform: translateX(100vw); /* één volledige schermbreedte opschuiven */
+    transform: translateX(200vw); /* één volledige schermbreedte opschuiven */
   }
 }
 
