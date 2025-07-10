@@ -248,7 +248,7 @@ body {
 .project-detail img {
   margin-top: 20px;
   width: 100%;
-  max-width: 700px;
+  max-width: 650px;
   display: block;
 }
 
@@ -257,14 +257,14 @@ body {
 }
 
 .image-gallery {
-  max-width: 700px;
+  max-width: 650px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
 .image-gallery img {
   width: 100%;
-  max-height: 700px;
+  max-height: 650px;
   object-fit: contain;
   margin-bottom: 20px;
   display: block;
@@ -281,7 +281,7 @@ body {
 
 
 .project-tekst {
-  max-width: 700px;
+  max-width: 650px;
   margin: 50px auto 20px;
   padding: 0 20px;
   font-size: 1.1rem;
@@ -301,7 +301,7 @@ body {
 }
 
 .project-detail {
-  max-width: 700px;
+  max-width: 650px;
   margin: 150px auto 20px;
   padding: 0 20px;
 }
