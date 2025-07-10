@@ -388,3 +388,12 @@ body.stil .image-wrapper {
 .project-tekst a:hover {
   text-decoration: underline;
 }
+
+/* HIGHLIGHT IN TEKST */
+
+.highlight-roze {
+  background-color: rgba(248, 134, 252, 0.4); /* pittig roze met transparantie */
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em; /* optioneel voor een zachtere look */
+}
+
