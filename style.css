@@ -1,7 +1,7 @@
 /* ========== BASISLAYOUT ========== */
 body {
   margin: 0;
-  font-family: 'Cormorant', serif;
+  font-family: 'IM fell English', serif;
   background-color: white;
   overflow: scroll;
 }
@@ -16,7 +16,7 @@ body {
   content: "© 2025 Judith Caeyers   -   judithcaeyers@gmail.com   -   BE 0734 742 237";
   display: block;
   text-align: center;
-  font-family: 'Cormorant', serif;
+  font-family: 'IM fell English', serif;
   font-size: 0.9rem;
   padding: 40px 20px;
   color: black;
@@ -211,7 +211,7 @@ body {
   background: none;
   border: none;
   font-size: 1rem;
-  font-family: 'Cormorant', serif;
+  font-family: 'IM fell English', serif;
   cursor: pointer;
   transition: color 0.2s ease;
 }
