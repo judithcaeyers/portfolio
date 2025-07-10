@@ -376,3 +376,15 @@ body.stil .image-wrapper {
     column-count: 1;
   }
 }
+
+/* ========== VORMGEVING LINKS ========== */
+
+
+.project-tekst a {
+  color: #f886fc;
+  text-decoration: none;
+}
+
+.project-tekst a:hover {
+  text-decoration: underline;
+}
