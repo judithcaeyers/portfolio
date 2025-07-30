@@ -1,55 +1,99 @@
-t<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
   <title>Project 5 – Judith Caeyers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- Custom styles -->
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
     <h1>Ella, veel huis op weinig plek</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
-    <p><em> In samenwerkingn met <a href="https://www.dmoa.be" target="_blank">DMOA Architecten</a>.</em></p>
-    <p>
-      Ella is de verbouwing van een halfopen woning in een landelijke buurt van Leuven, waar een jong koppel droomde van een toekomstig gezin met drie kinderen. Hun wens? Een warme, huiselijke plek met genoeg ademruimte voor iedereen. Daarom werd gekozen voor een nieuwe uitbouw met meerdere plekken om te chillen: een zitplek in de keuken, een bank in de inkomhal, en natuurlijk de klassieke living.
-    </p>
-    <p>
-      De ruimtes hangen als een enfilade aan elkaar, waardoor je subtiel de aanwezigheid van de anderen voelt, zonder altijd met elkaar in interactie te zijn. Door de slimme indeling en het creëren van geborgen hoeken, biedt het huis tegelijk rust en verbondenheid. Veel ruimte, op een compacte oppervlakte – mét toekomstpotentieel.
-    </p>
+    <p><em>In samenwerking met <a href="https://www.dmoa.be" target="_blank">DMOA Architecten</a>.</em></p>
+
+    <p>Ella is de verbouwing van een halfopen woning in een landelijke buurt van Leuven, waar een jong koppel droomde van een toekomstig gezin met drie kinderen. Hun wens? Een warme, huiselijke plek met genoeg ademruimte voor iedereen. Daarom werd gekozen voor een nieuwe uitbouw met meerdere plekken om te chillen: een zitplek in de keuken, een bank in de inkomhal, en natuurlijk de klassieke living.</p>
+
+    <p>De ruimtes hangen als een enfilade aan elkaar, waardoor je subtiel de aanwezigheid van de anderen voelt, zonder altijd met elkaar in interactie te zijn. Door de slimme indeling en het creëren van geborgen hoeken, biedt het huis tegelijk rust en verbondenheid. Veel ruimte, op een compacte oppervlakte – mét toekomstpotentieel.</p>
   </div>
 
-  <!-- Afbeeldingen over volledige breedte -->
-<div class="image-gallery">
-  <video autoplay muted loop playsinline>
-    <source src="../images/project5.mp4" type="video/mp4">
-    Je browser ondersteunt geen video's.
-  </video>
-  <img src="../images/project5_1.png" alt="Project 5 – Afbeelding 1">
-  <img src="../images/project5_2.png" alt="Project 5 – Afbeelding 2">
-  <img src="../images/project5_3.png" alt="Project 5 – Afbeelding 3">
-  <img src="../images/project5_4.png" alt="Project 5 – Afbeelding 4">
-  <img src="../images/project5_5.png" alt="Project 5 – Afbeelding 5">
-</div>
+  <!-- Afbeeldingen en video met GLightbox -->
+  <div class="image-gallery">
+    <a href="../images/project5.mp4" class="glightbox" data-type="video">
+      <img src="../images/project5_1.png" alt="Video preview">
+    </a>
+    <a href="../images/project5_1.png" class="glightbox"><img src="../images/project5_1.png" alt="Project 5 – Afbeelding 1"></a>
+    <a href="../images/project5_2.png" class="glightbox"><img src="../images/project5_2.png" alt="Project 5 – Afbeelding 2"></a>
+    <a href="../images/project5_3.png" class="glightbox"><img src="../images/project5_3.png" alt="Project 5 – Afbeelding 3"></a>
+    <a href="../images/project5_4.png" class="glightbox"><img src="../images/project5_4.png" alt="Project 5 – Afbeelding 4"></a>
+    <a href="../images/project5_5.png" class="glightbox"><img src="../images/project5_5.png" alt="Project 5 – Afbeelding 5"></a>
+  </div>
 
-
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project4.html" class="nav-button">← Vorige</a>
     <a href="project6.html" class="nav-button">Volgende →</a>
   </div>
 
   <footer class="site-footer"></footer>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 
 </body>
 </html>
