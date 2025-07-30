@@ -3,28 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 6 – Judith Caeyers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="top-nav">
+  <!-- Navigatie -->
+  <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-
+  <!-- Titel -->
   <div class="project-detail">
-    <h1>Project 6</h1>
-    <p>
-      Hier wil ik het hebben over cateren & eten & cheflilj. Dit is een voorlopig project dat nog niet online staat. Hier kan je later meer info toevoegen over het concept, het proces of het resultaat.
-    </p>
-    <img src="../images/project6.png" alt="Project 6" width="500">
+    <h1>Cheflilj – koken als verhaal</h1>
   </div>
 
+  <!-- Tekst -->
+  <div class="project-tekst">
+    <p><em>Cheflilj</em> is mijn alias wanneer ik de keuken induik. Koken is voor mij geen routine, maar een creatieve uitlaatklep waarin smaken, reizen en herinneringen samenkomen op het bord.</p>
+    <p>Wat begon met etentjes voor vrienden groeide uit tot kleine caterprojecten, brunchconcepten en diners op locatie. Elk gerecht vertelt iets over een plek, een ontmoeting of een experiment – altijd huisgemaakt, vaak onverwacht, en met veel liefde geserveerd.</p>
+    <p>Later komt hier nog meer beeldmateriaal en uitleg bij over specifieke projecten.</p>
+  </div>
+
+  <!-- Afbeelding met Lightbox -->
+  <div class="image-gallery">
+    <a href="../images/project6.png" class="glightbox"><img src="../images/project6.png" alt="Project 6"></a>
+  </div>
+
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project5.html" class="nav-button">← Vorige</a>
     <a href="project9.html" class="nav-button">Volgende →</a>
   </div>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 </body>
 </html>
