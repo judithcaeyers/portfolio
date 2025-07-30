@@ -3,54 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 4 – Judith Caeyers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
     <h1>Vitrien – Kunst tussen stad en vitrine</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
     <p><em>In samenwerking met Aya Koné, Georgy Chtchevaev, Joseph Thabang Palframan, Thomas De Paepe & <a href="https://www.lov2030.be" target="_blank">LOV2030</a>.</em></p>
-    <p>
-      Vitrien is een nomadisch kunstinitiatief dat leegstaande of onverwachte plekken in de stad tijdelijk activeert met prikkelende tentoonstellingen. Het project laat kunst opduiken waar je het niet verwacht – in winkelruiten, lege panden, of zelfs actieve handelszaken – en maakt van de straat een galerij.
-    </p>
-    <p>
-      Als mede-initiatiefnemer was ik verantwoordelijk voor het hele traject: van het vinden van geschikte locaties, het opbouwen van relaties met eigenaars en stadsdiensten, tot het cureren van de tentoonstellingen zelf. Communicatie, grafische lijn, budgetbeheer en praktische productie nam ik ook op.
-    </p>
-    <p>
-      Vitrien is evenzeer een sociaal project als een artistiek experiment: we combineren expo’s met cocktails, gesprekken en kleine ontmoetingen. Op die manier ontstaat een toegankelijke ervaring die voorbijgangers uitnodigt tot vertraging, verwondering of gesprek.
-    </p>
-    <p>
-      Het project toont mijn talent voor creatieve conceptontwikkeling, coördinatie en het verbinden van disciplines in een stedelijke context. Het bewijst ook hoe je met minimale middelen en veel verbeelding een blijvende indruk kan maken in het stadsweefsel.
-    </p>
+
+    <p>Vitrien is een nomadisch kunstinitiatief dat leegstaande of onverwachte plekken in de stad tijdelijk activeert met prikkelende tentoonstellingen. Het project laat kunst opduiken waar je het niet verwacht – in winkelruiten, lege panden, of zelfs actieve handelszaken – en maakt van de straat een galerij.</p>
+
+    <p>Als mede-initiatiefnemer was ik verantwoordelijk voor het hele traject: van het vinden van geschikte locaties, het opbouwen van relaties met eigenaars en stadsdiensten, tot het cureren van de tentoonstellingen zelf. Communicatie, grafische lijn, budgetbeheer en praktische productie nam ik ook op.</p>
+
+    <p>Vitrien is evenzeer een sociaal project als een artistiek experiment: we combineren expo’s met cocktails, gesprekken en kleine ontmoetingen. Op die manier ontstaat een toegankelijke ervaring die voorbijgangers uitnodigt tot vertraging, verwondering of gesprek.</p>
+
+    <p>Het project toont mijn talent voor creatieve conceptontwikkeling, coördinatie en het verbinden van disciplines in een stedelijke context. Het bewijst ook hoe je met minimale middelen en veel verbeelding een blijvende indruk kan maken in het stadsweefsel.</p>
   </div>
 
-  <!-- Afbeelding over volledige breedte -->
-<div class="image-gallery">
-  <img src="../images/project4_10.jpeg" alt="Project 4 – Afbeelding 10">
-  <img src="../images/project4_3.jpeg" alt="Project 4 – Afbeelding 3">
-  <img src="../images/project4_6.jpeg" alt="Project 4 – Afbeelding 6">
-  <img src="../images/project4_1.jpeg" alt="Project 4 – Afbeelding 1">
-  <img src="../images/project4_2.jpeg" alt="Project 4 – Afbeelding 2">
-  <img src="../images/project4_4.jpeg" alt="Project 4 – Afbeelding 4">
-  <img src="../images/project4_5.jpeg" alt="Project 4 – Afbeelding 5">
-  <img src="../images/project4_7.jpeg" alt="Project 4 – Afbeelding 7">
-  <img src="../images/project4_8.jpeg" alt="Project 4 – Afbeelding 8">
+  <!-- Afbeeldingen met Lightbox -->
+  <div class="image-gallery">
+    <a href="../images/project4_1.jpeg" class="glightbox"><img src="../images/project4_1.jpeg" alt="Project 4.1"></a>
+    <a href="../images/project4_2.jpeg" class="glightbox"><img src="../images/project4_2.jpeg" alt="Project 4.2"></a>
+    <a href="../images/project4_3.jpeg" class="glightbox"><img src="../images/project4_3.jpeg" alt="Project 4.3"></a>
+    <a href="../images/project4_4.jpeg" class="glightbox"><img src="../images/project4_4.jpeg" alt="Project 4.4"></a>
+    <a href="../images/project4_5.jpeg" class="glightbox"><img src="../images/project4_5.jpeg" alt="Project 4.5"></a>
+    <a href="../images/project4_6.jpeg" class="glightbox"><img src="../images/project4_6.jpeg" alt="Project 4.6"></a>
+    <a href="../images/project4_7.jpeg" class="glightbox"><img src="../images/project4_7.jpeg" alt="Project 4.7"></a>
+    <a href="../images/project4_8.jpeg" class="glightbox"><img src="../images/project4_8.jpeg" alt="Project 4.8"></a>
+    <a href="../images/project4_9.jpeg" class="glightbox"><img src="../images/project4_9.jpeg" alt="Project 4.9"></a>
+    <a href="../images/project4_10.jpeg" class="glightbox"><img src="../images/project4_10.jpeg" alt="Project 4.10"></a>
+  </div>
 
-</div>
-
-
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project3.html" class="nav-button">← Vorige</a>
     <a href="project5.html" class="nav-button">Volgende →</a>
@@ -58,5 +93,10 @@
 
   <footer class="site-footer"></footer>
 
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 </body>
 </html>
