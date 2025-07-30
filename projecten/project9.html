@@ -3,49 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 2 – Judith Caeyers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
 
+<body>
 
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
     <h1>Kruul Kunst, wat een tekenschool zou kunnen zijn.</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
-    <p>
-<em>In samenwerking met <a href="https://www.liebormans.be" target="_blank">Lie Bormans</a>.</em>
-    </p>
-    <p>
-Kruul Kunst is onze interpretatie van wat een tekenschool zou kunnen zijn. Het vormt een creatieve en dynamische ontmoetingsplek waar deelnemers (ervaren of ongeoefend) hun meest artistieke zelve kunnen ontpoppen. Met Kruul Kunst zetten we in op experimenteren en spelen, op het loslaten van verwachtingen en gewoon doen! </p>
-    <p>
-Elke lessenreeks gaan we aan de slag een andere Belgische kunstenaars, samen met ons, de inhoud van de lessen zal vormgeven. Allen tezamen nemen we een kijkje in de unieke creatieve wereld van elke kunstenaar. Zo hebben we onder andere al samengewerkt met Eva Lynen, bekend van haar illustraties in De Standaard & Bisser, vooral gekend van zijn grote muurschilderingen in Leuven.
-    </p>
+    <p><em>In samenwerking met <a href="https://www.liebormans.be" target="_blank">Lie Bormans</a>.</em></p>
+    <p>Kruul Kunst is onze interpretatie van wat een tekenschool zou kunnen zijn. Het vormt een creatieve en dynamische ontmoetingsplek waar deelnemers (ervaren of ongeoefend) hun meest artistieke zelve kunnen ontpoppen. Met Kruul Kunst zetten we in op experimenteren en spelen, op het loslaten van verwachtingen en gewoon doen!</p>
+    <p>Elke lessenreeks gaan we aan de slag met een andere Belgische kunstenaar, die samen met ons de inhoud van de lessen vormgeeft. We nemen een kijkje in de unieke creatieve kosmos van elke maker. Zo werkten we al samen met Eva Lynen (illustraties in De Standaard) en Bisser (bekend van zijn muurschilderingen in Leuven).</p>
   </div>
 
-  <!-- Afbeeldingen over volledige breedte -->
+  <!-- Afbeeldingen in lightbox -->
   <div class="image-gallery">
-    <img src="../images/project2.png" alt="KUNST afbeelding 1">
-    <img src="../images/just2.png" alt="KUNST afbeelding 2">
-    <img src="../images/just3.png" alt="Just afbeelding 3">
-    <img src="../images/just4.png" alt="Just afbeelding 4">
-    <img src="../images/just5.png" alt="Just afbeelding 5">
+    <a href="images/project1_1.jpeg" data-lightbox="project1">
+      <img src="images/project1_1.jpeg" alt="Project 1.1" class="project p1">
+    </a>
+
+    <a href="images/project1_2.jpeg" data-lightbox="project1">
+      <img src="images/project1_2.jpeg" alt="Project 1.2" class="project p2">
+    </a>
   </div>
 
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project6.html" class="nav-button">← Vorige</a>
     <a href="project1.html" class="nav-button">Volgende →</a>
   </div>
 
   <footer class="site-footer"></footer>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 </body>
 </html>
