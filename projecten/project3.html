@@ -3,59 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 3 – Judith Caeyers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
-    <h1>Spanje – bouwen in een andere context</h1>
+    <h1>Spanje – Bouwen in een andere context</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
-    <p>
-      Dit project bracht me naar Spanje, waar ik deel uitmaakte van een kleinschalig woonexperiment. Bouwen in een zuiders klimaat betekent anders denken: over schaduw, watergebruik, materialen, en vooral: over samenleven.
-    </p>
-    <p>
-      Ik werkte mee aan het ontwerp van een kleine woonunit in een collectief woonproject, ingebed in een heuvelachtig landschap. De uitdaging lag niet alleen in het bouwen met beperkte middelen, maar ook in het afstemmen van wensen binnen een groep met uiteenlopende verwachtingen.
-    </p>
-    <p>
-      Mijn rol was zowel ontwerpend als coördinerend: plannen vertalen naar uitvoerbare stappen, communicatie stroomlijnen tussen de bouwers, en praktische oplossingen bedenken voor onvoorziene omstandigheden. De eenvoud van de constructie vroeg om creativiteit in elk detail.
-    </p>
-    <p>
-      Dit project leerde me hoe belangrijk proces is – hoe een ontwerp pas werkt als het past bij wie het moet gebruiken, en bij waar het staat. En hoe architectuur ook een sociaal weefsel is, niet enkel een vorm.
-    </p>
+    <p>Dit project bracht me naar Spanje, waar ik deel uitmaakte van een kleinschalig woonexperiment. Bouwen in een zuiders klimaat betekent anders denken: over schaduw, watergebruik, materialen, en vooral: over samenleven.</p>
+
+    <p>Ik werkte mee aan het ontwerp van een kleine woonunit in een collectief woonproject, ingebed in een heuvelachtig landschap. De uitdaging lag niet alleen in het bouwen met beperkte middelen, maar ook in het afstemmen van wensen binnen een groep met uiteenlopende verwachtingen.</p>
+
+    <p>Mijn rol was zowel ontwerpend als coördinerend: plannen vertalen naar uitvoerbare stappen, communicatie stroomlijnen tussen de bouwers, en praktische oplossingen bedenken voor onvoorziene omstandigheden. De eenvoud van de constructie vroeg om creativiteit in elk detail.</p>
+
+    <p>Dit project leerde me hoe belangrijk proces is – hoe een ontwerp pas werkt als het past bij wie het moet gebruiken, en bij waar het staat. En hoe architectuur ook een sociaal weefsel is, niet enkel een vorm.</p>
   </div>
 
-  <!-- Galerij met afbeelding en video's -->
+  <!-- Galerij -->
   <div class="image-gallery">
-    <img src="../images/project3_1.png" alt="Afbeelding van Project 3">
+    <a href="../images/project3_1.png" class="glightbox"><img src="../images/project3_1.png" alt="Project 3.1"></a>
 
     <video autoplay muted loop playsinline>
       <source src="../images/project3_1.mp4" type="video/mp4">
       Je browser ondersteunt deze video niet.
     </video>
-    
-    <img src="../images/project3_2.png" alt="Afbeelding van Project 3">
-    <img src="../images/project3_3.png" alt="Afbeelding van Project 3">
-    
+
+    <a href="../images/project3_2.png" class="glightbox"><img src="../images/project3_2.png" alt="Project 3.2"></a>
+    <a href="../images/project3_3.png" class="glightbox"><img src="../images/project3_3.png" alt="Project 3.3"></a>
+
     <video autoplay muted loop playsinline>
       <source src="../images/project3_2.mp4" type="video/mp4">
       Je browser ondersteunt deze video niet.
     </video>
 
-    <img src="../images/project3_4.png" alt="Afbeelding van Project 3">
-
+    <a href="../images/project3_4.png" class="glightbox"><img src="../images/project3_4.png" alt="Project 3.4"></a>
   </div>
 
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project2.html" class="nav-button">← Vorige</a>
     <a href="project4.html" class="nav-button">Volgende →</a>
@@ -63,5 +97,10 @@
 
   <footer class="site-footer"></footer>
 
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 </body>
 </html>
