@@ -3,66 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <title>Kruul, een unieke eventlocatie in Leuven</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
     <h1>Kruul, een unieke eventlocatie in Leuven</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
+    <p>
+      Kruul is geen klassieke eventlocatie, maar een plek die mee evolueert met ideeën. Een ruimte waar brunchconcerten naast netwerkavonden bestonden, en waar foodconcepten en tekenschool moeiteloos samensmolten.
+    </p>
 
-<p>
-Kruul is geen klassieke eventlocatie. Het is een plek die groeit met ideeën, waar brunchconcerten naast netwerkavonden bestonden, waar tekenschool en foodconcepten samenklonken. 
-Ik bouwde deze locatie uit van branding tot boekingsflow, van een zomer pop-upbar tot zakelijke bijeenkomsten.
-</p>
+    <p>
+      Ik hielp Kruul mee opbouwen – van branding tot boekingsflow. Van een zomerse pop-upbar tot zakelijke bijeenkomsten. Naast de inhoudelijke programmatie stond ik ook in voor de infrastructuur: een heldere website, een reservatiesysteem, een ticketsysteem. Tools die het organiseren eenvoudiger maakten, zodat de ervaring centraal kon staan.
+    </p>
 
-<p>
-Naast de inhoudelijke programmatie bouwde ik ook de infrastructuur: een heldere website, plug-ins om timeslots te reserveren, een shop voor ticketverkoop – tools die het organiseren vlotter maakten, zodat de ervaring centraal kon staan.
-</p>
+    <p>
+      Ik beheerde de cijfers, volgde de boekhouding op, stroomlijnde de communicatie met klanten. En stond soms ook gewoon zelf achter het fornuis.
+    </p>
 
-<p>
-Tegelijk stond ik in voor de praktische werking van Kruul: ik beheerde de cijfers, volgde de boekhouding op en stroomlijnde de communicatie met klanten. 
-Soms stond ik zelfs achter het fornuis.
-</p>
-
-<p>
-Kruul leerde me wat het betekent om een ruimte echt te laten werken: technisch, esthetisch én menselijk. En hoe je, al doende, een bedrijf bouwt.
-</p>
-
-
+    <p>
+      Kruul leerde me hoe je een ruimte echt laat werken – technisch, esthetisch én menselijk. En hoe je, al doende, een bedrijf bouwt.
+    </p>
   </div>
 
-  <!-- Afbeelding over volledige breedte -->
-    <div class="image-gallery">
-  <img src="../images/project1_1.jpeg" alt="Project 1 – Afbeelding 1">
-  <img src="../images/project1_2.jpeg" alt="Project 1 – Afbeelding 2">
-  <img src="../images/project1_3.jpeg" alt="Project 1 – Afbeelding 3">
-  <img src="../images/project1_4.jpeg" alt="Project 1 – Afbeelding 4">
-  <img src="../images/project1_5.jpeg" alt="Project 1 – Afbeelding 5">
-  <img src="../images/project1_6.jpeg" alt="Project 1 – Afbeelding 6">
-  <img src="../images/project1_8.jpeg" alt="Project 1 – Afbeelding 8">
-  <img src="../images/project1_10.jpeg" alt="Project 1 – Afbeelding 10">
-  <img src="../images/project1_11.jpeg" alt="Project 1 – Afbeelding 11">
-  <img src="../images/project1_13.jpeg" alt="Project 1 – Afbeelding 13">
-</div>
+  <!-- Galerij -->
+  <div class="image-gallery">
+    <a href="../images/project1_1.jpeg" class="glightbox"><img src="../images/project1_1.jpeg" alt="Project 1 – Afbeelding 1"></a>
+    <a href="../images/project1_2.jpeg" class="glightbox"><img src="../images/project1_2.jpeg" alt="Project 1 – Afbeelding 2"></a>
+    <a href="../images/project1_3.jpeg" class="glightbox"><img src="../images/project1_3.jpeg" alt="Project 1 – Afbeelding 3"></a>
+    <a href="../images/project1_4.jpeg" class="glightbox"><img src="../images/project1_4.jpeg" alt="Project 1 – Afbeelding 4"></a>
+    <a href="../images/project1_5.jpeg" class="glightbox"><img src="../images/project1_5.jpeg" alt="Project 1 – Afbeelding 5"></a>
+    <a href="../images/project1_6.jpeg" class="glightbox"><img src="../images/project1_6.jpeg" alt="Project 1 – Afbeelding 6"></a>
+    <a href="../images/project1_8.jpeg" class="glightbox"><img src="../images/project1_8.jpeg" alt="Project 1 – Afbeelding 8"></a>
+    <a href="../images/project1_10.jpeg" class="glightbox"><img src="../images/project1_10.jpeg" alt="Project 1 – Afbeelding 10"></a>
+    <a href="../images/project1_11.jpeg" class="glightbox"><img src="../images/project1_11.jpeg" alt="Project 1 – Afbeelding 11"></a>
+    <a href="../images/project1_13.jpeg" class="glightbox"><img src="../images/project1_13.jpeg" alt="Project 1 – Afbeelding 13"></a>
+  </div>
 
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project9.html" class="nav-button">← Vorige</a>
     <a href="project2.html" class="nav-button">Volgende →</a>
   </div>
 
   <footer class="site-footer"></footer>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 
 </body>
 </html>
