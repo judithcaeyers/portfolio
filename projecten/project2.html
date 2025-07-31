@@ -3,23 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Just, een plek waar je blijft plakken</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    .project-detail h1 {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-weight: 350;
+      letter-spacing: 0.01em;
+    }
+
+    .gprev,
+    .gnext,
+    .glightbox-clean .gclose {
+      background: none !important;
+      box-shadow: none !important;
+      color: white;
+      padding: 0.5rem !important;
+    }
+
+    .gprev svg,
+    .gnext svg,
+    .glightbox-clean .gclose svg {
+      fill: white;
+      width: 32px;
+      height: 32px;
+    }
+
+    .glightbox-container .gclose {
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
+
 <body class="zomer-blauw">
 
+  <!-- Navigatie -->
   <div id="top-nav">
     <a href="../index.html" class="nav-button">Ik wil naar huis</a>
     <a href="../hallo.html" class="nav-button">Hallo</a>
   </div>
 
-  <!-- Titel apart houden -->
+  <!-- Titel -->
   <div class="project-detail">
     <h1>Just, een plek waar je blijft plakken.</h1>
   </div>
 
-  <!-- Tekst in twee kolommen -->
+  <!-- Tekst -->
   <div class="project-tekst">
     <p>
       Just is mijn eigen appartement. Na de aankoop bleef er nog net 10.000 euro over. Daarmee moest alles gebeuren: nieuwe elektriciteit, vloer in slaapkamers en gang, en vooral: een interieur waar mensen zich thuis voelen.
@@ -38,21 +78,37 @@
     </p>
   </div>
 
-  <!-- Afbeeldingen over volledige breedte -->
+  <!-- Galerij -->
   <div class="image-gallery">
-    <img src="../images/project2.png" alt="Just afbeelding 1">
-    <img src="../images/just2.png" alt="Just afbeelding 2">
-    <img src="../images/just3.png" alt="Just afbeelding 3">
-    <img src="../images/just4.png" alt="Just afbeelding 4">
-    <img src="../images/just5.png" alt="Just afbeelding 5">
-  </div>
 
+    <!-- Afbeeldingen -->
+   <a href="../images/project2_1.jpeg" class="glightbox"><img src="../images/project2_1.jpeg" alt="Project 2 – Afbeelding 1"></a>
+  <a href="../images/project2_2.jpeg" class="glightbox"><img src="../images/project2_2.jpeg" alt="Project 2 – Afbeelding 2"></a>
+  <a href="../images/project2_3.jpeg" class="glightbox"><img src="../images/project2_3.jpeg" alt="Project 2 – Afbeelding 3"></a>
+  <a href="../images/project2_4.jpeg" class="glightbox"><img src="../images/project2_4.jpeg" alt="Project 2 – Afbeelding 4"></a>
+  <a href="../images/project2_5.jpeg" class="glightbox"><img src="../images/project2_5.jpeg" alt="Project 2 – Afbeelding 5"></a>
+  <a href="../images/project2_6.jpeg" class="glightbox"><img src="../images/project2_6.jpeg" alt="Project 2 – Afbeelding 6"></a>
+  <a href="../images/project2_7.jpeg" class="glightbox"><img src="../images/project2_7.jpeg" alt="Project 2 – Afbeelding 7"></a>
+  <a href="../images/project2_8.jpeg" class="glightbox"><img src="../images/project2_8.jpeg" alt="Project 2 – Afbeelding 8"></a>
+  <a href="../images/project2_9.jpeg" class="glightbox"><img src="../images/project2_9.jpeg" alt="Project 2 – Afbeelding 9"></a>
+  <a href="../images/project2_10.jpeg" class="glightbox"><img src="../images/project2_10.jpeg" alt="Project 2 – Afbeelding 10"></a>
+  <a href="../images/project2_11.jpeg" class="glightbox"><img src="../images/project2_11.jpeg" alt="Project 2 – Afbeelding 11"></a>
+  <a href="../images/project2_12.jpeg" class="glightbox"><img src="../images/project2_12.jpeg" alt="Project 2 – Afbeelding 12"></a>
+</div>
+
+  <!-- Navigatie tussen projecten -->
   <div class="project-nav">
     <a href="project1.html" class="nav-button">← Vorige</a>
     <a href="project3.html" class="nav-button">Volgende →</a>
   </div>
 
   <footer class="site-footer"></footer>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 
 </body>
 </html>
